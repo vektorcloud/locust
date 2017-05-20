@@ -9,7 +9,10 @@ The below usage examples assuming you have a `locustfile.py` file in your curren
 ### Standalone
 
 ```bash
-docker run -dt -v $(pwd)/locustfile.py:/locust/locustfile.py quay.io/vektorcloud/locust:latest --host=http://example.com
+docker run -d \
+           -p 8089:8089 \
+           -v $(pwd)/locustfile.py:/locust/locustfile.py
+           quay.io/vektorcloud/locust:latest --host=http://example.com
 ```
 
 ### Distributed
