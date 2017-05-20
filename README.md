@@ -4,7 +4,18 @@ Minimal Locust Docker image
 
 ## Usage
 
-Assuming you have a target locust file in your current directory:
+The below usage examples assuming you have a `locustfile.py` file in your current directory
+
+### Standalone
+
 ```bash
-docker run -dt -v $(pwd)/my_locust_file.py:/locust/locustfile.py quay.io/vektorcloud/locust:latest --host=http://example.com
+docker run -dt -v $(pwd)/locustfile.py:/locust/locustfile.py quay.io/vektorcloud/locust:latest --host=http://example.com
+```
+
+### Distributed
+
+To run locust in distrbuted mode with multiple workers, use the `docker-compose.yml` file included in the repo:
+```bash
+LOCUST_TARGE=http://example.com docker-compose up -d
+docker-compose scale worker=3
 ```
