@@ -1,10 +1,10 @@
 # locust
 
-Minimal Locust Docker image
+Minimal [Locust](https://github.com/locustio/locust) Docker image build
 
 ## Usage
 
-The below usage examples assuming you have a `locustfile.py` file in your current directory
+The below usage examples assume you have a `locustfile.py` file in your current directory
 
 ### Standalone
 
