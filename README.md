@@ -19,6 +19,6 @@ docker run -d \
 
 To run locust in distrbuted mode with multiple workers, use the `docker-compose.yml` file included in the repo:
 ```bash
-LOCUST_TARGE=http://example.com docker-compose up -d
+LOCUST_TARGET=http://example.com docker-compose up -d
 docker-compose scale worker=3
 ```

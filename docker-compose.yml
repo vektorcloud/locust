@@ -13,6 +13,8 @@ services:
     extends:
       service: base
     ports:
+      - 5557
+      - 5558
       - 8089:8089
     command: --master --host=${LOCUST_TARGET}
 
