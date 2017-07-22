@@ -23,6 +23,7 @@ services:
       service: base
     depends_on:
       - master
+    entrypoint: /run.sh
     command: --slave --master-host=master --host=${LOCUST_TARGET}
 
 networks:
