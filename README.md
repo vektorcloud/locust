@@ -1,5 +1,7 @@
 # locust
 
+![circleci][circleci]
+
 Minimal [Locust](https://github.com/locustio/locust) Docker image build
 
 ## Usage
@@ -22,3 +24,5 @@ To run locust in distrbuted mode with multiple workers, use the `docker-compose.
 LOCUST_TARGET=http://example.com docker-compose up -d
 docker-compose scale worker=3
 ```
+
+[circleci]: https://img.shields.io/circleci/project/github/vektorcloud/locust.svg "locust"
