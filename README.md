@@ -25,4 +25,4 @@ LOCUST_TARGET=http://example.com docker-compose up -d
 docker-compose scale worker=3
 ```
 
-[circleci]: https://img.shields.io/circleci/project/github/vektorcloud/locust.svg "locust"
+[circleci]: https://img.shields.io/circleci/build/gh/vektorcloud/locust?color=1dd6c9&logo=CircleCI&logoColor=1dd6c9&style=for-the-badge "locust"
