@@ -1,6 +1,6 @@
 # locust
 
-![circleci][circleci]
+[![circleci][circleci]](https://circleci.com/gh/vektorcloud/locust)
 
 Minimal [Locust](https://github.com/locustio/locust) Docker image build
 
